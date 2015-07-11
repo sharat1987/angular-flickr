@@ -1,0 +1,69 @@
+<div class="col-lg-5 col-md-push-3" data-ng-controller="CreateAccountController">
+    <div class="panel panel-default">
+        <div class="panel-heading"><h2>CREATE ACCOUNT</h2></div>
+        <form class="panel-body" name="userAccountForm">
+            <h4>Personal Information</h4>
+            <div class="well">
+                <div class="row">
+                    <label class="col-sm-4">First Name:</label>
+                    <input type="text" class="col-sm-4" id="fname" name="fname" required data-ng-model="model.fname" placeholder="First Name">
+                </div>
+                <div class="row">
+                    <label class="col-sm-4">Last Name:</label>
+                    <input type="text" class="col-sm-4" id="lname" name="lname" required data-ng-model="model.lname" placeholder="Last Name">
+                </div>
+                <div class="row">
+                    <label class="col-sm-4">Middle Name:</label>
+                    <input type="text" class="col-sm-4" id="mname" name="mname" data-ng-model="model.mname" placeholder="Middle Name">
+                </div>
+            </div>
+            <h4>Contact Information</h4>
+            <div class="well">
+                <div class="row">
+                    <label class="col-sm-4">Email:</label>
+                    <input type="email" class="col-sm-4" id="email" name="email" required data-ng-model="model.email" placeholder="example@example.com">
+                </div>
+                <div class="row">
+                    <label class="col-sm-4">Phone:</label>
+                    <input type="text" class="col-sm-4" id="phone" name="phone" required data-ng-model="model.phone" placeholder="City">
+                </div>
+                <div class="row">
+                    <label class="col-sm-4">Street Address1:</label>
+                    <input type="text" class="col-sm-4" id="streetAddres1" name="streetAddres1" required data-ng-model="model.streetAddres1" placeholder="D.No. Street">
+                </div>
+                <div class="row">
+                    <label class="col-sm-4">Street Address2:</label>
+                    <input type="text" class="col-sm-4" id="streetAddres2" name="email" required data-ng-model="model.email" placeholder="Apt/Suite #">
+                </div>
+                <div class="row">
+                    <label class="col-sm-4">City:</label>
+                    <input type="text" class="col-sm-4" id="city" name="city" required data-ng-model="model.city" placeholder="City">
+                </div>
+                <div class="row">
+                    <label class="col-sm-4">State:</label>
+                    <input type="text" class="col-sm-4" id="state" name="state" required data-ng-model="model.state" placeholder="State">
+                </div>
+                <div class="row">
+                    <label class="col-sm-4">Zip Code:</label>
+                    <input type="text" class="col-sm-4" id="zip" name="zip" required data-ng-model="model.zip" placeholder="Zip Code">
+                </div>
+            </div>
+            <h4>Authentication Information</h4>
+            <div class="well">
+                <div class="row">
+                    <label class="col-sm-4">Username:</label>
+                    <input type="text" class="col-sm-4" id="username" name="username" required data-ng-model="model.username" placeholder="Username">
+                </div>
+                <div class="row">
+                    <label class="col-sm-4">Password:</label>
+                    <input type="password" class="col-sm-4" id="password" name="password" required data-ng-model="model.password" placeholder="">
+                </div>
+                <div class="row">
+                    <label class="col-sm-4">Confirm Password:</label>
+                    <input type="password" class="col-sm-4" id="confirmPassword" name="confirmPassword" data-ng-model="model.confirmPassword" placeholder="">
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit" data-ng-click="submit()" data-ng-disable="userAccountForm.$error">Create Account</button>
+        </form>
+    </div>
+</div>

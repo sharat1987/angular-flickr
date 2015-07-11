@@ -1,0 +1,19 @@
+<div class="col-lg-5 col-md-push-3" data-ng-controller="LoginController">
+    <div class="panel panel-info">
+        <div class="panel-heading"><h2>Login</h2></div>
+        <form class="panel-body"  name="loginForm">
+            <p>Please enter your username and password to continue</p>
+            <div class="well">
+                <div class="row">
+                    <label class="col-sm-4">Username:</label>
+                    <input type="text" class="col-sm-4" id="username" name="username" required data-ng-model="model.username" placeholder="Username">
+                </div>
+                <div class="row">
+                    <label class="col-sm-4">Password:</label>
+                    <input type="password" class="col-sm-4" id="password" name="password" required data-ng-model="model.password" placeholder="">
+                </div>
+            </div>
+            <button class="btn btn-primary" type="submit" data-ng-click="submit()" data-ng-disable="loginForm.$error">Login</button>
+        </form>
+    </div>
+</div>
